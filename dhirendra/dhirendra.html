@@ -14,9 +14,6 @@
         <button whatsapp>WhatsApp Me</button>
         <button mail>Mail me</button>
     </div>
-    <div class="a-enter-vr" aframe-injected="">
-      <button class="a-enter-vr-button" title="Enter VR mode with a headset or fullscreen mode on a desktop. Visit https://webvr.rocks or https://webvr.info for more information." aframe-injected=""></button>
-    </div>
     <div>
         <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
           
@@ -30,25 +27,10 @@
               <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
               <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="0.001 0.001 0.001" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
             </a-entity>
-
-            <a-entity camera look-controls>
-              <a-entity cursor="fuse: true; fuseTimeout: 500"
-                        position="0 0 -1"
-                        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                        material="color: black; shader: flat">
-              </a-entity>
-            </a-entity>
             
           </a-scene>
           
     </div>
     
-    <!--script>
-      document.querySelectorAll('.whatsapp').forEach(button=>{
-        button.addEventListener('click', ()=>{
-          window.location.href = "http://www.google.com";
-      })
-      })
-    </script-->
   </body>
 </html>

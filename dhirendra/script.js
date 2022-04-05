@@ -4,7 +4,7 @@ const mailButton = document.querySelectorAll('[mail]')
 
 whatsAppButton.forEach(button =>{
     button.addEventListener('click', ()=>{
-        window.location.href = "https://web.whatsapp.com/send?phone=+917358324216";
+        window.location.href = "https://api.whatsapp.com/send?phone=+917358324216";
         
     })
 })
